@@ -19,12 +19,11 @@ volumes will be ues to store data.
 
 ###### initialize airflow and run the dags
 Ensure docker is running then run ```docker-compose up airflow-init```. Dags are contained/put in the dags folder.
-After airflow is initialized start services _>run ```docker-compose up```
-use ```docker ps``` to confirm that the services are running
-navigate to ```localhost:8080```
+After airflow is initialized start services ->run ```docker-compose up```
+use ```docker ps``` to confirm that the services are running then navigate to ```localhost:8080```
 
 ###### tweepy_dag.py (trending_hashtags dag)
-Is the dag that contains functions to connect to twiiter.The dag uses  ```PythonVirtualvenvOperator``` to create and activate the venv that uses tweepy module.
+The dag that contains functions to connect to twitter.The dag uses  ```PythonVirtualvenvOperator``` to create and activate the venv that uses tweepy module.
 All the operations are wrapped in one callable function to avoid Xcom issues.
 
 The dag contains two tasks 
