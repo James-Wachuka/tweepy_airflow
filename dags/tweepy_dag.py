@@ -24,7 +24,7 @@ def get_api():
     auth.set_access_token(access_token, access_token_secret)
     api = tweepy.API(auth, wait_on_rate_limit=True)
     print("successfuly activated virtual env and connected to twitter API")
-    # cordinates for Nairobi city
+    # coordinates for Nairobi city
     lat= 1.2921
     long= 36.8219
     # methods to get trends- tweepy==4.6.0
