@@ -3,7 +3,8 @@ Using airflow and tweepy to shoow trending hashtags 20 minutes
 
 ###### getting started with tweepy_airflow
 First, create a new folder called tweepy_airflow.
-Run this command: ```curl -LfO 'https://airflow.apache.org/docs/apache-airflow/2.3.3/docker-compose.yaml``` to download the docker compose file. The file contains several services definitions, including airflow-scheduler, airflow-webserver, airflow-worker, airflow-init, postgres, and redis
+Run this command:
+```curl -LfO 'https://airflow.apache.org/docs/apache-airflow/2.3.3/docker-compose.yaml``` to download the docker compose file. The file contains several services definitions, including airflow-scheduler, airflow-webserver, airflow-worker, airflow-init, postgres, and redis
 
 ###### adding data volumes to docker-compose file
 volumes will be ues to store data. 
