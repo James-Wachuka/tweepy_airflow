@@ -1,0 +1,136 @@
+[2022-10-20 09:41:11,466] {scheduler_job.py:182} INFO - Started process (PID=1190) to work on /opt/airflow/dags/example_dag_2.py
+[2022-10-20 09:41:11,471] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/example_dag_2.py for tasks to queue
+[2022-10-20 09:41:11,474] {logging_mixin.py:104} INFO - [2022-10-20 09:41:11,474] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag_2.py
+[2022-10-20 09:41:11,500] {logging_mixin.py:104} INFO - [2022-10-20 09:41:11,496] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/example_dag_2.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag_2.py", line 44
+    '''hashtags = [trend["name"] for trend in trends_ if "#" in trend["name"]]
+
+    
+    #api_ = twitter_api()
+    #kwargs['ti'].xcom_push(key='value from pusher 1', value=api)
+    #return api
+
+# api_ = twitter_api()
+# get trends for a particular country
+# kenya coordinates : lat= 1.2921,  long= 36.8219
+'''def get_trends(**kwargs):
+                                                                              
+
+    
+                         
+                                                                 
+               
+
+                      
+                                     
+                                                 
+     ^
+SyntaxError: invalid syntax
+[2022-10-20 09:41:11,507] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag_2.py
+[2022-10-20 09:41:11,558] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/example_dag_2.py took 0.097 seconds
+[2022-10-20 09:41:42,729] {scheduler_job.py:182} INFO - Started process (PID=1220) to work on /opt/airflow/dags/example_dag_2.py
+[2022-10-20 09:41:42,734] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/example_dag_2.py for tasks to queue
+[2022-10-20 09:41:42,740] {logging_mixin.py:104} INFO - [2022-10-20 09:41:42,740] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag_2.py
+[2022-10-20 09:41:43,329] {logging_mixin.py:104} INFO - [2022-10-20 09:41:43,326] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/example_dag_2.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag_2.py", line 106, in <module>
+    python_callable = twitter_api,
+NameError: name 'twitter_api' is not defined
+[2022-10-20 09:41:43,333] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag_2.py
+[2022-10-20 09:41:43,353] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/example_dag_2.py took 0.635 seconds
+[2022-10-20 09:42:13,873] {scheduler_job.py:182} INFO - Started process (PID=1250) to work on /opt/airflow/dags/example_dag_2.py
+[2022-10-20 09:42:13,880] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/example_dag_2.py for tasks to queue
+[2022-10-20 09:42:13,882] {logging_mixin.py:104} INFO - [2022-10-20 09:42:13,882] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag_2.py
+[2022-10-20 09:42:14,928] {logging_mixin.py:104} INFO - [2022-10-20 09:42:14,917] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/example_dag_2.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag_2.py", line 106, in <module>
+    python_callable = twitter_api,
+NameError: name 'twitter_api' is not defined
+[2022-10-20 09:42:14,939] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag_2.py
+[2022-10-20 09:42:15,097] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/example_dag_2.py took 1.254 seconds
+[2022-10-20 09:42:45,288] {scheduler_job.py:182} INFO - Started process (PID=1281) to work on /opt/airflow/dags/example_dag_2.py
+[2022-10-20 09:42:45,291] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/example_dag_2.py for tasks to queue
+[2022-10-20 09:42:45,293] {logging_mixin.py:104} INFO - [2022-10-20 09:42:45,293] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag_2.py
+[2022-10-20 09:42:46,085] {logging_mixin.py:104} INFO - [2022-10-20 09:42:46,071] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/example_dag_2.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag_2.py", line 106, in <module>
+    python_callable = twitter_api,
+NameError: name 'twitter_api' is not defined
+[2022-10-20 09:42:46,101] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag_2.py
+[2022-10-20 09:42:46,121] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/example_dag_2.py took 0.838 seconds
+[2022-10-20 09:43:16,299] {scheduler_job.py:182} INFO - Started process (PID=1311) to work on /opt/airflow/dags/example_dag_2.py
+[2022-10-20 09:43:16,304] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/example_dag_2.py for tasks to queue
+[2022-10-20 09:43:16,309] {logging_mixin.py:104} INFO - [2022-10-20 09:43:16,309] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag_2.py
+[2022-10-20 09:43:17,708] {logging_mixin.py:104} INFO - [2022-10-20 09:43:17,698] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/example_dag_2.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag_2.py", line 106, in <module>
+    python_callable = twitter_api,
+NameError: name 'twitter_api' is not defined
+[2022-10-20 09:43:17,712] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag_2.py
+[2022-10-20 09:43:17,758] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/example_dag_2.py took 1.492 seconds
+[2022-10-20 09:43:48,676] {scheduler_job.py:182} INFO - Started process (PID=1343) to work on /opt/airflow/dags/example_dag_2.py
+[2022-10-20 09:43:48,685] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/example_dag_2.py for tasks to queue
+[2022-10-20 09:43:48,687] {logging_mixin.py:104} INFO - [2022-10-20 09:43:48,687] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag_2.py
+[2022-10-20 09:43:49,511] {logging_mixin.py:104} INFO - [2022-10-20 09:43:49,489] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/example_dag_2.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag_2.py", line 106, in <module>
+    python_callable = twitter_api,
+NameError: name 'twitter_api' is not defined
+[2022-10-20 09:43:49,518] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag_2.py
+[2022-10-20 09:43:49,546] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/example_dag_2.py took 0.874 seconds
+[2022-10-20 09:44:20,037] {scheduler_job.py:182} INFO - Started process (PID=1376) to work on /opt/airflow/dags/example_dag_2.py
+[2022-10-20 09:44:20,038] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/example_dag_2.py for tasks to queue
+[2022-10-20 09:44:20,039] {logging_mixin.py:104} INFO - [2022-10-20 09:44:20,039] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag_2.py
+[2022-10-20 09:44:20,718] {logging_mixin.py:104} INFO - [2022-10-20 09:44:20,713] {dagbag.py:305} ERROR - Failed to import: /opt/airflow/dags/example_dag_2.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 302, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag_2.py", line 106, in <module>
+    python_callable = twitter_api,
+NameError: name 'twitter_api' is not defined
+[2022-10-20 09:44:20,721] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag_2.py
+[2022-10-20 09:44:20,741] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/example_dag_2.py took 0.713 seconds
+[2022-10-20 09:44:51,152] {scheduler_job.py:182} INFO - Started process (PID=1407) to work on /opt/airflow/dags/example_dag_2.py
+[2022-10-20 09:44:51,157] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/example_dag_2.py for tasks to queue
+[2022-10-20 09:44:51,158] {logging_mixin.py:104} INFO - [2022-10-20 09:44:51,158] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag_2.py
+[2022-10-20 09:44:51,163] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag_2.py
+[2022-10-20 09:44:51,164] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/example_dag_2.py took 0.021 seconds
+[2022-10-20 09:45:21,293] {scheduler_job.py:182} INFO - Started process (PID=1434) to work on /opt/airflow/dags/example_dag_2.py
+[2022-10-20 09:45:21,296] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/example_dag_2.py for tasks to queue
+[2022-10-20 09:45:21,304] {logging_mixin.py:104} INFO - [2022-10-20 09:45:21,303] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag_2.py
+[2022-10-20 09:45:21,309] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag_2.py
+[2022-10-20 09:45:21,310] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/example_dag_2.py took 0.034 seconds
+[2022-10-20 09:45:51,763] {scheduler_job.py:182} INFO - Started process (PID=1464) to work on /opt/airflow/dags/example_dag_2.py
+[2022-10-20 09:45:51,769] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/example_dag_2.py for tasks to queue
+[2022-10-20 09:45:51,772] {logging_mixin.py:104} INFO - [2022-10-20 09:45:51,771] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag_2.py
+[2022-10-20 09:45:51,777] {scheduler_job.py:641} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag_2.py
+[2022-10-20 09:45:51,779] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/example_dag_2.py took 0.026 seconds

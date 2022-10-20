@@ -1,0 +1,58 @@
+[2022-10-20 10:28:34,351] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trending_hashtags.connecting_to_twitter_api 2022-10-20T10:28:30.989744+00:00 [queued]>
+[2022-10-20 10:28:34,425] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: trending_hashtags.connecting_to_twitter_api 2022-10-20T10:28:30.989744+00:00 [queued]>
+[2022-10-20 10:28:34,428] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-20 10:28:34,433] {taskinstance.py:1043} INFO - Starting attempt 1 of 1
+[2022-10-20 10:28:34,441] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-20 10:28:34,508] {taskinstance.py:1063} INFO - Executing <Task(PythonVirtualenvOperator): connecting_to_twitter_api> on 2022-10-20T10:28:30.989744+00:00
+[2022-10-20 10:28:34,542] {standard_task_runner.py:52} INFO - Started process 58 to run task
+[2022-10-20 10:28:34,572] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'trending_hashtags', 'connecting_to_twitter_api', '2022-10-20T10:28:30.989744+00:00', '--job-id', '84', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/tweepy_dag.py', '--cfg-path', '/tmp/tmp12defn2o', '--error-file', '/tmp/tmp9bw_0vri']
+[2022-10-20 10:28:34,596] {standard_task_runner.py:77} INFO - Job 84: Subtask connecting_to_twitter_api
+[2022-10-20 10:28:34,798] {logging_mixin.py:104} INFO - Running <TaskInstance: trending_hashtags.connecting_to_twitter_api 2022-10-20T10:28:30.989744+00:00 [running]> on host 4e607c4cf7a0
+[2022-10-20 10:28:34,983] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=trending_hashtags
+AIRFLOW_CTX_TASK_ID=connecting_to_twitter_api
+AIRFLOW_CTX_EXECUTION_DATE=2022-10-20T10:28:30.989744+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-10-20T10:28:30.989744+00:00
+[2022-10-20 10:28:34,987] {process_utils.py:135} INFO - Executing cmd: virtualenv /tmp/venv5qxzjjtl
+[2022-10-20 10:28:35,060] {process_utils.py:137} INFO - Output:
+[2022-10-20 10:28:39,294] {process_utils.py:141} INFO - created virtual environment CPython3.6.15.final.0-64 in 2253ms
+[2022-10-20 10:28:39,295] {process_utils.py:141} INFO -   creator CPython3Posix(dest=/tmp/venv5qxzjjtl, clear=False, no_vcs_ignore=False, global=False)
+[2022-10-20 10:28:39,309] {process_utils.py:141} INFO -   seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/home/airflow/.local/share/virtualenv)
+[2022-10-20 10:28:39,310] {process_utils.py:141} INFO -     added seed packages: pip==21.0.1, setuptools==52.0.0, wheel==0.36.2
+[2022-10-20 10:28:39,311] {process_utils.py:141} INFO -   activators BashActivator,CShellActivator,FishActivator,PowerShellActivator,PythonActivator,XonshActivator
+[2022-10-20 10:28:39,368] {process_utils.py:135} INFO - Executing cmd: /tmp/venv5qxzjjtl/bin/pip install tweepy
+[2022-10-20 10:28:39,406] {process_utils.py:137} INFO - Output:
+[2022-10-20 10:28:51,390] {process_utils.py:141} INFO - Collecting tweepy
+[2022-10-20 10:28:51,459] {process_utils.py:141} INFO -   Using cached tweepy-4.6.0-py2.py3-none-any.whl (69 kB)
+[2022-10-20 10:28:52,173] {process_utils.py:141} INFO - Collecting oauthlib<4,>=3.2.0
+[2022-10-20 10:28:52,235] {process_utils.py:141} INFO -   Using cached oauthlib-3.2.2-py3-none-any.whl (151 kB)
+[2022-10-20 10:28:53,494] {process_utils.py:141} INFO - Collecting requests<3,>=2.27.0
+[2022-10-20 10:28:53,540] {process_utils.py:141} INFO -   Using cached requests-2.27.1-py2.py3-none-any.whl (63 kB)
+[2022-10-20 10:28:53,847] {process_utils.py:141} INFO - Collecting requests-oauthlib<2,>=1.2.0
+[2022-10-20 10:28:53,895] {process_utils.py:141} INFO -   Using cached requests_oauthlib-1.3.1-py2.py3-none-any.whl (23 kB)
+[2022-10-20 10:28:54,271] {process_utils.py:141} INFO - Collecting idna<4,>=2.5
+[2022-10-20 10:28:54,311] {process_utils.py:141} INFO -   Using cached idna-3.4-py3-none-any.whl (61 kB)
+[2022-10-20 10:28:55,543] {process_utils.py:141} INFO - Collecting charset-normalizer~=2.0.0
+[2022-10-20 10:28:55,652] {process_utils.py:141} INFO -   Using cached charset_normalizer-2.0.12-py3-none-any.whl (39 kB)
+[2022-10-20 10:28:56,629] {process_utils.py:141} INFO - Collecting certifi>=2017.4.17
+[2022-10-20 10:28:56,672] {process_utils.py:141} INFO -   Using cached certifi-2022.9.24-py3-none-any.whl (161 kB)
+[2022-10-20 10:28:57,792] {process_utils.py:141} INFO - Collecting urllib3<1.27,>=1.21.1
+[2022-10-20 10:28:57,820] {process_utils.py:141} INFO -   Using cached urllib3-1.26.12-py2.py3-none-any.whl (140 kB)
+[2022-10-20 10:28:58,578] {process_utils.py:141} INFO - Installing collected packages: urllib3, idna, charset-normalizer, certifi, requests, oauthlib, requests-oauthlib, tweepy
+[2022-10-20 10:29:00,146] {process_utils.py:141} INFO - Successfully installed certifi-2022.9.24 charset-normalizer-2.0.12 idna-3.4 oauthlib-3.2.2 requests-2.27.1 requests-oauthlib-1.3.1 tweepy-4.6.0 urllib3-1.26.12
+[2022-10-20 10:29:01,148] {process_utils.py:141} INFO - WARNING: You are using pip version 21.0.1; however, version 21.3.1 is available.
+[2022-10-20 10:29:01,149] {process_utils.py:141} INFO - You should consider upgrading via the '/tmp/venv5qxzjjtl/bin/python -m pip install --upgrade pip' command.
+[2022-10-20 10:29:01,406] {process_utils.py:135} INFO - Executing cmd: /tmp/venv5qxzjjtl/bin/python /tmp/venv5qxzjjtl/script.py /tmp/venv5qxzjjtl/script.in /tmp/venv5qxzjjtl/script.out /tmp/venv5qxzjjtl/string_args.txt
+[2022-10-20 10:29:01,445] {process_utils.py:137} INFO - Output:
+[2022-10-20 10:29:05,913] {process_utils.py:141} INFO - successfuly activated virtual env and connected to twitter API
+[2022-10-20 10:29:05,914] {process_utils.py:141} INFO - #MashujaaDay
+[2022-10-20 10:29:05,915] {process_utils.py:141} INFO - #MUNTOT
+[2022-10-20 10:29:05,916] {process_utils.py:141} INFO - #MainaAndKingangi
+[2022-10-20 10:29:05,917] {process_utils.py:141} INFO - #BWAffair
+[2022-10-20 10:29:05,919] {process_utils.py:141} INFO - #BWBetterTogether
+[2022-10-20 10:29:06,124] {python.py:118} INFO - Done. Returned value was: None
+[2022-10-20 10:29:06,144] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=trending_hashtags, task_id=connecting_to_twitter_api, execution_date=20221020T102830, start_date=20221020T102834, end_date=20221020T102906
+[2022-10-20 10:29:06,213] {local_task_job.py:146} INFO - Task exited with return code 1
