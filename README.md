@@ -46,7 +46,7 @@ message_out = PythonOperator(
 ###### airflow web UI
 Using the web UI access the  ```trending hashtags dag``` unpause and trigger the dag. Use any of theview options to monitor the progress of dag. check logs for ouput and possibe errors
 
-use ```docker-compose``` to the services
+use ```docker-compose  down``` to stop the services
 
 
 
