@@ -1,5 +1,5 @@
 ###### tweepy-airflow
-Using airflow and tweepy to shoW trending hashtags 20 minutes
+Using airflow and tweepy to show trending hashtags 20 minutes
 
 ###### getting started with tweepy_airflow
 First, create a new folder called tweepy_airflow.
