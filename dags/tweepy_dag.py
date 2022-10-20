@@ -13,10 +13,10 @@ def get_api():
     # importing a package in the function ensures that it is accessible when the venv is created
     import tweepy
     # api credentials - input yours
-    consumer_key = "Vc8kfWvaGtbPTqyBkA2AuKcxo"
-    consumer_secret = "J2oDrXCLfPVJKSfG7g7JpYuAO1n7rtaOTLoEGpdmfxBNfeebBf"
-    access_token = "1357221708541939714-cR46HEPE3SKDJuGx1HMQaReM6OQGks"
-    access_token_secret = "qCtyFv0CmO8ZhvfkfAk3STLizu995TNQJSxTOLGO6a0Yh"
+    consumer_key = " "
+    consumer_secret = " "
+    access_token = " "
+    access_token_secret = " "
 
     # authentication of consumer key and secret
     auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
