@@ -7,7 +7,7 @@ Run this command:
 ```curl -LfO 'https://airflow.apache.org/docs/apache-airflow/2.3.3/docker-compose.yaml``` to download the docker compose file. The file contains several services definitions, including airflow-scheduler, airflow-webserver, airflow-worker, airflow-init, postgres, and redis
 
 ###### adding data volumes to docker-compose file
-volumes will be ues to store data. 
+volumes will be used to store data. 
 
 ```volumes:
     - ./dags:/opt/airflow/dags
