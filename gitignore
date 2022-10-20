@@ -2,4 +2,3 @@ include/
 Lib/
 Scripts/
 pyvenv.cfg
-logs/
